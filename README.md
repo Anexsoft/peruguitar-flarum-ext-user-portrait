@@ -14,8 +14,6 @@ composer require peruguitar/flarum-ext-user-portrait:"*"
 
 ```sh
 composer update peruguitar/flarum-ext-user-portrait:"*"
-php flarum migrate
-php flarum cache:clear
 ```
 
 ## Links
