@@ -1,6 +1,6 @@
 {
     "name": "peruguitar/flarum-ext-user-portrait",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Show user portrait on home page",
     "keywords": [
         "flarum"
