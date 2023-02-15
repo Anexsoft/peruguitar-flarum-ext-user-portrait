@@ -1,0 +1,56 @@
+{
+    "name": "peruguitar/flarum-ext-user-portrait",
+    "version": "1.0.0",
+    "description": "Show user portrait on home page",
+    "keywords": [
+        "flarum"
+    ],
+    "type": "flarum-extension",
+    "license": "CC-BY-NC-ND-2.0",
+    "require": {
+        "flarum/core": "^1.2.0"
+    },
+    "authors": [
+        {
+            "name": "Peru Guitar",
+            "email": "erodriguezp105@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PeruGuitar\\UserPortrait\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "User-portrait",
+            "category": "",
+            "icon": {
+                "name": "fa fa-user",
+                "color": "#ffffff",
+                "backgroundColor": "#3f335e"
+            }
+        },
+        "flarum-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": true,
+                "css": true,
+                "locale": true,
+                "gitConf": true,
+                "githubActions": false,
+                "prettier": true,
+                "typescript": true,
+                "bundlewatch": true,
+                "backendTesting": false,
+                "editorConfig": true,
+                "styleci": true
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

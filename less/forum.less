@@ -1,0 +1,54 @@
+.pg-user-portrait {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    line-height: 15px;
+
+    @media @phone {
+        width: 200px;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    .pg-user-portrait-avatar{
+        border: 2px solid  @primary-color;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        margin-right: 1em;
+        display: table;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+
+        span {
+            background: @primary-color;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 1.8em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+
+    .pg-user-portrait-username {
+        flex: 1;
+        width: 100px;
+        height: 20px;
+        margin-top: -15px;
+
+        span:last-child {
+            display: block;
+            color: @primary-color;
+            font-weight: bold;
+            font-size: 1.1em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

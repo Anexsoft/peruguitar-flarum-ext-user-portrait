@@ -1,0 +1,9 @@
+peruguitar-user-portrait:
+  # For more details on the format
+  # Checkout https://docs.flarum.org/extend/i18n/#appendix-a-standard-key-format
+  admin:
+    available_for_mobile_label: Display on mobile?
+    available_for_mobile_help: Make the user portrait available for mobile version
+
+  forum:
+    welcome_back_label: Welcome back
