@@ -33,7 +33,6 @@ __webpack_require__.r(__webpack_exports__);
 function addUserPortrait() {
   var excludeFromMobile = app.forum.attribute('pgUserPortraitExcludeFromMobile') == 1;
   var user = app.session.user.data.attributes;
-  console.log(excludeFromMobile);
   return m("div", {
     className: "pg-user-portrait " + (excludeFromMobile ? 'pg-user-portrait-mobile-hidden' : '')
   }, m("div", {
