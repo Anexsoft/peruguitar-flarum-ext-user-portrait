@@ -2,8 +2,6 @@ export default function addUserPortrait() {
     const excludeFromMobile = app.forum.attribute('pgUserPortraitExcludeFromMobile') == 1;
     const user = app.session.user.data.attributes;
 
-    console.log(excludeFromMobile)
-
     return (
         <div className={`pg-user-portrait ${excludeFromMobile ? 'pg-user-portrait-mobile-hidden' : ''}`}>
             <div class="pg-user-portrait-avatar">
