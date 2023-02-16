@@ -31,10 +31,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ addUserPortrait)
 /* harmony export */ });
 function addUserPortrait() {
-  var availableForMobile = app.forum.attribute('pgUserPortraitAvailableForMobile') === 1;
+  var excludeFromMobile = app.forum.attribute('pgUserPortraitExcludeFromMobile') == 1;
   var user = app.session.user.data.attributes;
+  console.log(excludeFromMobile);
   return m("div", {
-    className: "pg-user-portrait " + (!availableForMobile ? 'pg-user-portrait-mobile-hidden' : '')
+    className: "pg-user-portrait " + (excludeFromMobile ? 'pg-user-portrait-mobile-hidden' : '')
   }, m("div", {
     "class": "pg-user-portrait-avatar"
   }, user.avatarUrl && m("img", {
