@@ -2,8 +2,8 @@ peruguitar-user-portrait:
   # For more details on the format
   # Checkout https://docs.flarum.org/extend/i18n/#appendix-a-standard-key-format
   admin:
-    available_for_mobile_label: Mostrar en dispotivos móbiles?
-    available_for_mobile_help: Hacer que el retrato del usuario este disponible en dispositivos móviles
+    exclude_from_mobile_label: Excluir de móvil?
+    exclude_from_mobile_help: Excluye el retrato del usuario de los dispositivos móviles
 
   forum:
     welcome_back_label: Bienvenido

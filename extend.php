@@ -15,7 +15,7 @@ use Flarum\Extend;
 
 return [
     (new Extend\Settings)
-    ->serializeToForum('pgUserPortraitAvailableForMobile', 'peruguitar.user-portrait.available_for_mobile'),
+    ->serializeToForum('pgUserPortraitExcludeFromMobile', 'peruguitar.user-portrait.exclude_from_mobile'),
     (new Extend\Frontend('forum'))
         ->js(__DIR__.'/js/dist/forum.js')
         ->css(__DIR__.'/less/forum.less'),

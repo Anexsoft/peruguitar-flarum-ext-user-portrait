@@ -2,8 +2,8 @@ peruguitar-user-portrait:
   # For more details on the format
   # Checkout https://docs.flarum.org/extend/i18n/#appendix-a-standard-key-format
   admin:
-    available_for_mobile_label: Display on mobile?
-    available_for_mobile_help: Make the user portrait available for mobile version
+    exclude_from_mobile_label: Exclude from mobile?
+    exclude_from_mobile_help: Exclude user portrait from mobile devices
 
   forum:
     welcome_back_label: Welcome back
