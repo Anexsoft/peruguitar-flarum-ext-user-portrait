@@ -23,18 +23,19 @@
         width: 60px;
         height: 60px;
         margin-right: 1em;
-        display: table;
         overflow: hidden;
+
+        background: var(--avatar-bg);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: content-box;
 
         img {
             width: 100%;
         }
 
         span {
-            background: @primary-color;
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center;
             font-size: 1.8em;
             font-weight: bold;
             text-transform: uppercase;
@@ -44,14 +45,13 @@
     .pg-user-portrait-username {
         flex: 1;
         width: 100px;
-        height: 20px;
-        margin-top: -15px;
 
         span:last-child {
             display: block;
             color: @primary-color;
             font-weight: bold;
             font-size: 1.1em;
+            padding-bottom: 5px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
